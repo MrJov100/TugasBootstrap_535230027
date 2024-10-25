@@ -1,0 +1,267 @@
+.navbar {
+  background: linear-gradient(90deg, #007bff, #6f42c1);
+  transition: background-color 0.3s ease;
+}
+
+.navbar:hover {
+  background: linear-gradient(90deg, #0056b3, #5a3e9f);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #001f3f;
+  background-color: #ffe600;
+}
+
+.nav-item .nav-link {
+  color: white;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-item .nav-link:hover {
+  background-color: #ffe600;
+  color: rgb(0, 0, 0);
+}
+
+.navbar-toggler {
+  border-color: white;
+}
+
+.navbar-toggler-icon {
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+}
+
+.carousel-container {
+  position: relative;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 600px;
+}
+
+.carousel-caption h5 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+}
+
+section h2,
+section h3 {
+  font-family: "Lora", serif;
+  color: #333;
+}
+
+section p {
+  font-family: "Open Sans", sans-serif;
+  color: #555;
+}
+
+footer {
+  margin-top: 2rem;
+}
+
+footer h5 {
+  font-weight: bold;
+}
+
+footer p,
+footer ul li a {
+  color: #666;
+}
+
+footer .bg-dark {
+  background-color: #000 !important;
+}
+
+.btn-outline-dark:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.second-row {
+  margin-top: -20px;
+}
+
+.portfolio-card {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.portfolio-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-img-top {
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.card-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.7);
+  color: white;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  text-align: center;
+  padding: 10px;
+}
+
+.card:hover .card-body {
+  transform: translateY(0);
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-fluid {
+  transition: transform 0.3s ease;
+}
+
+.img-fluid:hover {
+  transform: scale(1.2);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.social-icons img {
+  width: 70px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.col-lg-4,
+.col-lg-8 {
+  margin-top: 20px;
+}
+
+.footer {
+  background: linear-gradient(135deg, #007bff, #6f42c1);
+  color: white;
+  padding: 40px 20px;
+  text-align: left;
+}
+
+.footer:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin: 20px;
+}
+
+.footer-section h2,
+.footer-section h3 {
+  font-family: "Arial", sans-serif;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: white;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 10px 0;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ffe600;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.newsletter-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #ffe600;
+  color: #000;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.newsletter-form button:hover {
+  background: #ffd700;
+}
+
+.footer-bottom p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #ffffff;
+}

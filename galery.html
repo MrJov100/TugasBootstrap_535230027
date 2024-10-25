@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gallery - Photography Lifestyle</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">Photography Lifestyle</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutme.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#community">Join Community</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Gallery Section -->
+    <section class="container my-5 pt-5">
+      <h2 class="text-center mb-4">Gallery</h2>
+
+      <!-- Dropdown Filter -->
+      <div class="mb-4 text-center">
+        <label for="categoryFilter" class="form-label"
+          >Filter by Category:</label
+        >
+        <select
+          id="categoryFilter"
+          class="form-select"
+          onchange="filterGallery()"
+        >
+          <option value="all">All</option>
+          <option value="building">Building</option>
+          <option value="nature">Nature</option>
+          <option value="sky">Sky</option>
+        </select>
+      </div>
+
+      <p class="text-center mb-4" style="text-align: justify">
+        Welcome to my gallery, where I showcase the artistry and creativity of
+        photography. This collection features stunning images that capture the
+        beauty of diverse landscapes, vibrant cultures, and the intricate
+        details of life. Each photograph tells a unique story, inviting viewers
+        to explore and appreciate the world through my lens. I hope you find
+        inspiration and joy in every piece displayed here.
+      </p>
+
+      <div class="row" id="gallery">
+        <!-- Building Images -->
+        <div class="col-md-4 p-1 category-building">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="assets/Building/building1.jpg"
+              class="card-img-top"
+              alt="Building 1"
+              onclick="openModal(this)"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            />
+            <div class="card-body">
+              <p class="card-text">Building 1</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-1 category-building">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="assets/Building/building2.jpg"
+              class="card-img-top"
+              alt="Building 2"
+              onclick="openModal(this)"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            />
+            <div class="card-body">
+              <p class="card-text">Building 2</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 p-1 category-building">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="assets/Building/building3.jpg"
+              class="card-img-top"
+              alt="Building 3"
+              onclick="openModal(this)"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            />
+            <div class="card-body">
+              <p class="card-text">Building 3</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-1 category-building">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="assets/Building/building4.jpg"
+              class="card-img-top"
+              alt="Building 4"
+              onclick="openModal(this)"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            />
+            <div class="card-body">
+              <p class="card-text">Building 4</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-1 category-building">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="assets/Building/building5.jpg"
+              class="card-img-top"
+              alt="Building 5"
+              onclick="openModal(this)"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            />
+            <div class="card-body">
+              <p class="card-text">Building 5</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-1 category-building">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="assets/Building/building6.jpg"
+              class="card-img-top"
+              alt="Building 6"
+              onclick="openModal(this)"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            />
+            <div class="card-body">
+              <p class="card-text">Building 6</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nature Images -->
+        <div class="col-md-4 p-1 category-nature">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="assets/Nature/nature1.jpg"
+              class="card-img-top"
+              alt="Nature 1"
+              onclick="openModal(this)"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            />
+            <div class="card-body">
+              <p class="card-text">Nature 1</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-1 category-nature">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="assets/Nature/nature2.jpg"
+              class="card-img-top"
+              alt="Nature 2"
+              onclick="openModal(this)"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            />
+            <div class="card-body">
+              <p class="card-text">Nature 2</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 p-1 category-nature">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="assets/Nature/nature3.jpg"
+              class="card-img-top"
+              alt="Nature 3"
+              onclick="openModal(this)"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            />
+            <div class="card-body">
+              <p class="card-text">Nature 3</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-1 category-nature">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="assets/Nature/nature4.jpg"
+              class="card-img-top"
+              alt="Nature 4"
+              onclick="openModal(this)"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            />
+            <div class="card-body">
+              <p class="card-text">Nature 4</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-1 category-nature">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="assets/Nature/nature5.jpg"
+              class="card-img-top"
+              alt="Nature 5"
+              onclick="openModal(this)"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            />
+            <div class="card-body">
+              <p class="card-text">Nature 5</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-1 category-nature">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="assets/Nature/nature6.jpg"
+              class="card-img-top"
+              alt="Nature 6"
+              onclick="openModal(this)"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            />
+            <div class="card-body">
+              <p class="card-text">Nature 6</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-1 category-nature">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="assets/Nature/nature7.jpg"
+              class="card-img-top"
+              alt="Nature 7"
+              onclick="openModal(this)"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            />
+            <div class="card-body">
+              <p class="card-text">Nature 7</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-1 category-nature">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="assets/Nature/nature8.jpg"
+              class="card-img-top"
+              alt="Nature 8"
+              onclick="openModal(this)"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            />
+            <div class="card-body">
+              <p class="card-text">Nature 8</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-1 category-nature">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="assets/Nature/nature9.jpg"
+              class="card-img-top"
+              alt="Nature 9"
+              onclick="openModal(this)"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            />
+            <div class="card-body">
+              <p class="card-text">Nature 9</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-1 category-nature">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="assets/Nature/nature10.jpg"
+              class="card-img-top"
+              alt="Nature 10"
+              onclick="openModal(this)"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            />
+            <div class="card-body">
+              <p class="card-text">Nature 10</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-1 category-nature">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="assets/Nature/nature11.jpg"
+              class="card-img-top"
+              alt="Nature 11"
+              onclick="openModal(this)"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            />
+            <div class="card-body">
+              <p class="card-text">Nature 11</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-1 category-nature">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="assets/Nature/nature12.jpg"
+              class="card-img-top"
+              alt="Nature 12"
+              onclick="openModal(this)"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            />
+            <div class="card-body">
+              <p class="card-text">Nature 12</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sky Images -->
+        <div class="col-md-4 p-1 category-sky">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="assets/Sky/sky1.jpg"
+              class="card-img-top"
+              alt="Sky 1"
+              onclick="openModal(this)"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            />
+            <div class="card-body">
+              <p class="card-text">Sky 1</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-1 category-sky">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="assets/Sky/sky2.jpg"
+              class="card-img-top"
+              alt="Sky 2"
+              onclick="openModal(this)"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            />
+            <div class="card-body">
+              <p class="card-text">Sky 2</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 p-1 category-sky">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="assets/Sky/sky3.jpg"
+              class="card-img-top"
+              alt="Sky 3"
+              onclick="openModal(this)"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            />
+            <div class="card-body">
+              <p class="card-text">Sky 3</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-1 category-sky">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="assets/Sky/sky4.jpg"
+              class="card-img-top"
+              alt="Sky 4"
+              onclick="openModal(this)"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            />
+            <div class="card-body">
+              <p class="card-text">Sky 4</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-1 category-sky">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="assets/Sky/sky5.jpg"
+              class="card-img-top"
+              alt="Sky 5"
+              onclick="openModal(this)"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            />
+            <div class="card-body">
+              <p class="card-text">Sky 5</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-1 category-sky">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="assets/Sky/sky6.jpg"
+              class="card-img-top"
+              alt="Sky 6"
+              onclick="openModal(this)"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            />
+            <div class="card-body">
+              <p class="card-text">Sky 6</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-1 category-sky">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="assets/Sky/sky7.jpg"
+              class="card-img-top"
+              alt="Sky 7"
+              onclick="openModal(this)"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            />
+            <div class="card-body">
+              <p class="card-text">Sky 7</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-1 category-sky">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="assets/Sky/sky8.jpg"
+              class="card-img-top"
+              alt="Sky 8"
+              onclick="openModal(this)"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            />
+            <div class="card-body">
+              <p class="card-text">Sky 8</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-1 category-sky">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="assets/Sky/sky9.jpg"
+              class="card-img-top"
+              alt="Sky 9"
+              onclick="openModal(this)"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            />
+            <div class="card-body">
+              <p class="card-text">Sky 9</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-1 category-sky">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="assets/Sky/sky10.jpg"
+              class="card-img-top"
+              alt="Sky 10"
+              onclick="openModal(this)"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            />
+            <div class="card-body">
+              <p class="card-text">Sky 10</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-1 category-sky">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="assets/Sky/sky11.jpg"
+              class="card-img-top"
+              alt="Sky 11"
+              onclick="openModal(this)"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            />
+            <div class="card-body">
+              <p class="card-text">Sky 11</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-1 category-sky">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="assets/Sky/sky12.jpg"
+              class="card-img-top"
+              alt="Sky 12"
+              onclick="openModal(this)"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            />
+            <div class="card-body">
+              <p class="card-text">Sky 12</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-1 category-sky">
+          <div class="card mb-4 shadow-sm">
+            <img
+              src="assets/Sky/sky13.jpg"
+              class="card-img-top"
+              alt="Sky 13"
+              onclick="openModal(this)"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+            />
+            <div class="card-body">
+              <p class="card-text">Sky 13</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bagian Footer -->
+    <footer class="footer" id="community">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h2>Photography Lifestyle</h2>
+          <p>
+            Join me in capturing the world through the art of photography. Be
+            part of a community that thrives on creativity, inspiration, and the
+            power of imagery.
+          </p>
+        </div>
+        <div class="footer-section links">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="galery.html">Gallery</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+          </ul>
+        </div>
+        <div class="footer-section newsletter">
+          <h3>Join Our Community</h3>
+          <p>Enter your email to stay updated:</p>
+          <form id="joinForm" class="newsletter-form">
+            <input
+              type="email"
+              id="email"
+              placeholder="Your email address"
+              required
+            />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2024 Jovandi Todana. All rights reserved. <br />
+          All photographs displayed on this website are original works captured
+          by me.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+
+  <!-- bagian Modal untuk pop up image -->
+  <div
+    class="modal fade"
+    id="imageModal"
+    tabindex="-1"
+    aria-labelledby="imageModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img id="modalImage" src="" class="img-fluid" alt="Modal Image" />
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</html>
